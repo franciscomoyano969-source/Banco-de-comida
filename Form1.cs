@@ -1,42 +1,43 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace Banco_de_comida
+namespace WinFormsApp3
 {
-    public partial class Inicio : Form
+    public partial class Form1 : Form
     {
-        public Inicio()
+        public Form1()
         {
             InitializeComponent();
         }
 
-        private void btningresar_Click(object sender, EventArgs e)
-        {
-            Menu menu = new Menu();
-            menu.Show(this);
-            this.Hide();
-        }
-
-        private void Inicio_Load(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void txtingresar_TextChanged(object sender, EventArgs e)
+        private void btnMateriaPrima_Click(object sender, EventArgs e)
         {
-
+            MATERIA_PRIMA mater = new MATERIA_PRIMA();
+            mater.Show();
+            Hide();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void btnRotacionPersonal_Click(object sender, EventArgs e)
         {
+            ROTACION_PERSONAL rota = new ROTACION_PERSONAL();
+            rota.Show();
+            Hide();
+        }
 
+        private void btnDistribucion_Click(object sender, EventArgs e)
+        {
+            DISTRIBUCION_ALIMENTOS dist = new DISTRIBUCION_ALIMENTOS();
+            dist.Show();
+            Hide();
+        }
+
+        private void btnSolicitudesInstituciones_Click(object sender, EventArgs e)
+        {
+            APOYO_INSTITUCIONES apoyo = new APOYO_INSTITUCIONES();
+            apoyo.Show();
+            Hide();
         }
     }
 }

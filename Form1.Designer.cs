@@ -1,16 +1,16 @@
-﻿namespace Banco_de_comida
+﻿namespace WinFormsApp3
 {
-    partial class Inicio
+    partial class Form1
     {
         /// <summary>
-        /// Variable del diseñador necesaria.
+        ///  Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Limpiar los recursos que se estén usando.
+        ///  Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,115 +20,206 @@
             base.Dispose(disposing);
         }
 
-        #region Código generado por el Diseñador de Windows Forms
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// Método necesario para admitir el Diseñador. No se puede modificar
-        /// el contenido de este método con el editor de código.
+        ///  Required method for Designer support - do not modify
+        ///  the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btningresar = new System.Windows.Forms.Button();
-            this.txtingresar = new System.Windows.Forms.TextBox();
-            this.lblinicio = new System.Windows.Forms.Label();
-            this.lblingnombre = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            label1 = new Label();
+            label2 = new Label();
+            flowLayoutPanel1 = new FlowLayoutPanel();
+            pictureBox1 = new PictureBox();
+            btnMateriaPrima = new Button();
+            pictureBox2 = new PictureBox();
+            btnRotacionPersonal = new Button();
+            flowLayoutPanel2 = new FlowLayoutPanel();
+            pictureBox3 = new PictureBox();
+            btnDistribucion = new Button();
+            pictureBox4 = new PictureBox();
+            btnSolicitudesInstituciones = new Button();
+            flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            flowLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            SuspendLayout();
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Arial Rounded MT Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(157, 37);
+            label1.Name = "label1";
+            label1.Size = new Size(338, 22);
+            label1.TabIndex = 0;
+            label1.Text = "¡Bienvenido al Panel Administrativo!";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Arial Narrow", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Location = new Point(180, 59);
+            label2.Name = "label2";
+            label2.Size = new Size(290, 40);
+            label2.TabIndex = 1;
+            label2.Text = "Seleccione una opción para administrar y revisar la\r\ndistribución de alimentos y la gestion del personal.";
+            // 
+            // flowLayoutPanel1
+            // 
+            flowLayoutPanel1.BackColor = Color.Transparent;
+            flowLayoutPanel1.Controls.Add(pictureBox1);
+            flowLayoutPanel1.Controls.Add(btnMateriaPrima);
+            flowLayoutPanel1.Controls.Add(pictureBox2);
+            flowLayoutPanel1.Controls.Add(btnRotacionPersonal);
+            flowLayoutPanel1.Location = new Point(71, 134);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(245, 172);
+            flowLayoutPanel1.TabIndex = 2;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(800, 450);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.BackColor = Color.CadetBlue;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(3, 3);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(76, 76);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
-            // btningresar
+            // btnMateriaPrima
             // 
-            this.btningresar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btningresar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btningresar.FlatAppearance.BorderSize = 0;
-            this.btningresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btningresar.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btningresar.Image = ((System.Drawing.Image)(resources.GetObject("btningresar.Image")));
-            this.btningresar.Location = new System.Drawing.Point(369, 319);
-            this.btningresar.Name = "btningresar";
-            this.btningresar.Size = new System.Drawing.Size(100, 31);
-            this.btningresar.TabIndex = 1;
-            this.btningresar.Text = "Ingresar";
-            this.btningresar.UseVisualStyleBackColor = true;
-            this.btningresar.Click += new System.EventHandler(this.btningresar_Click);
+            btnMateriaPrima.Font = new Font("Arial Rounded MT Bold", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnMateriaPrima.Location = new Point(85, 3);
+            btnMateriaPrima.Name = "btnMateriaPrima";
+            btnMateriaPrima.Size = new Size(154, 76);
+            btnMateriaPrima.TabIndex = 1;
+            btnMateriaPrima.Text = "Materia Prima";
+            btnMateriaPrima.UseVisualStyleBackColor = true;
+            btnMateriaPrima.Click += btnMateriaPrima_Click;
             // 
-            // txtingresar
+            // pictureBox2
             // 
-            this.txtingresar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtingresar.Location = new System.Drawing.Point(310, 276);
-            this.txtingresar.Name = "txtingresar";
-            this.txtingresar.Size = new System.Drawing.Size(207, 20);
-            this.txtingresar.TabIndex = 2;
-            this.txtingresar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtingresar.TextChanged += new System.EventHandler(this.txtingresar_TextChanged);
+            pictureBox2.BackColor = Color.CadetBlue;
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(3, 85);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(76, 76);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 2;
+            pictureBox2.TabStop = false;
             // 
-            // lblinicio
+            // btnRotacionPersonal
             // 
-            this.lblinicio.AutoSize = true;
-            this.lblinicio.BackColor = System.Drawing.Color.Transparent;
-            this.lblinicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblinicio.Font = new System.Drawing.Font("Arial Black", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblinicio.Location = new System.Drawing.Point(252, 86);
-            this.lblinicio.Name = "lblinicio";
-            this.lblinicio.Size = new System.Drawing.Size(314, 82);
-            this.lblinicio.TabIndex = 3;
-            this.lblinicio.Text = "¡Banco de Comida \r\n     comunitario!";
+            btnRotacionPersonal.Font = new Font("Arial Rounded MT Bold", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnRotacionPersonal.Location = new Point(85, 85);
+            btnRotacionPersonal.Name = "btnRotacionPersonal";
+            btnRotacionPersonal.Size = new Size(154, 76);
+            btnRotacionPersonal.TabIndex = 3;
+            btnRotacionPersonal.Text = "Rotación de Personal";
+            btnRotacionPersonal.UseVisualStyleBackColor = true;
+            btnRotacionPersonal.Click += btnRotacionPersonal_Click;
             // 
-            // lblingnombre
+            // flowLayoutPanel2
             // 
-            this.lblingnombre.AutoSize = true;
-            this.lblingnombre.BackColor = System.Drawing.Color.Transparent;
-            this.lblingnombre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblingnombre.Font = new System.Drawing.Font("Arial Narrow", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblingnombre.Location = new System.Drawing.Point(291, 195);
-            this.lblingnombre.Name = "lblingnombre";
-            this.lblingnombre.Size = new System.Drawing.Size(238, 33);
-            this.lblingnombre.TabIndex = 4;
-            this.lblingnombre.Text = "Ingrese su nombre:";
-            this.lblingnombre.Click += new System.EventHandler(this.label2_Click);
+            flowLayoutPanel2.BackColor = Color.Transparent;
+            flowLayoutPanel2.Controls.Add(pictureBox3);
+            flowLayoutPanel2.Controls.Add(btnDistribucion);
+            flowLayoutPanel2.Controls.Add(pictureBox4);
+            flowLayoutPanel2.Controls.Add(btnSolicitudesInstituciones);
+            flowLayoutPanel2.Location = new Point(331, 134);
+            flowLayoutPanel2.Name = "flowLayoutPanel2";
+            flowLayoutPanel2.Size = new Size(248, 172);
+            flowLayoutPanel2.TabIndex = 3;
             // 
-            // Inicio
+            // pictureBox3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.lblingnombre);
-            this.Controls.Add(this.lblinicio);
-            this.Controls.Add(this.txtingresar);
-            this.Controls.Add(this.btningresar);
-            this.Controls.Add(this.pictureBox1);
-            this.MaximizeBox = false;
-            this.Name = "Inicio";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Inicio";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.Inicio_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            pictureBox3.BackColor = Color.CadetBlue;
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(3, 3);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(76, 76);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 0;
+            pictureBox3.TabStop = false;
+            // 
+            // btnDistribucion
+            // 
+            btnDistribucion.Font = new Font("Arial Rounded MT Bold", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnDistribucion.Location = new Point(85, 3);
+            btnDistribucion.Name = "btnDistribucion";
+            btnDistribucion.Size = new Size(154, 76);
+            btnDistribucion.TabIndex = 1;
+            btnDistribucion.Text = "Distribución";
+            btnDistribucion.UseVisualStyleBackColor = true;
+            btnDistribucion.Click += btnDistribucion_Click;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.BackColor = Color.CadetBlue;
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(3, 85);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(76, 76);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 2;
+            pictureBox4.TabStop = false;
+            // 
+            // btnSolicitudesInstituciones
+            // 
+            btnSolicitudesInstituciones.Font = new Font("Arial Rounded MT Bold", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnSolicitudesInstituciones.Location = new Point(85, 85);
+            btnSolicitudesInstituciones.Name = "btnSolicitudesInstituciones";
+            btnSolicitudesInstituciones.Size = new Size(154, 76);
+            btnSolicitudesInstituciones.TabIndex = 3;
+            btnSolicitudesInstituciones.Text = "Solicitudes a Instituciones";
+            btnSolicitudesInstituciones.UseVisualStyleBackColor = true;
+            btnSolicitudesInstituciones.Click += btnSolicitudesInstituciones_Click;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(651, 367);
+            Controls.Add(flowLayoutPanel2);
+            Controls.Add(flowLayoutPanel1);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Name = "Form1";
+            Text = " ";
+            Load += Form1_Load;
+            flowLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            flowLayoutPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btningresar;
-        private System.Windows.Forms.TextBox txtingresar;
-        private System.Windows.Forms.Label lblinicio;
-        private System.Windows.Forms.Label lblingnombre;
+        private Label label1;
+        private Label label2;
+        private FlowLayoutPanel flowLayoutPanel1;
+        private PictureBox pictureBox1;
+        private Button btnMateriaPrima;
+        private PictureBox pictureBox2;
+        private Button btnRotacionPersonal;
+        private FlowLayoutPanel flowLayoutPanel2;
+        private PictureBox pictureBox3;
+        private Button btnDistribucion;
+        private PictureBox pictureBox4;
+        private Button btnSolicitudesInstituciones;
     }
 }
-
